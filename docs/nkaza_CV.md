@@ -1,33 +1,24 @@
 ---
-title: JooYoung Seo's Curriculum Vitae
-graphics: yes
-name: JooYoung
-surname: Seo
+title: Nikhil Kaza
+graphics: no
+name: Nikhil
+surname: Kaza
 headcolor: 414141
-position: Ph.D.
-pronouns: he/him/his
-address: 614 E. Daniel St. | Room 5158, Champaign, IL 61820
-phone: +1 217-333-2671
-www: jooyoungseo.github.io
-email: jseo1005@illinois.edu
-twitter: seo_jooyoung
-github: jooyoungseo
-linkedin: jooyoungseo
-aboutme: |
-  I am a learning scientist, data-science/software developer, and internationally certified accessibility professional.
-date: May 23, 2024
-csl: csl/apa7-cv-jy-edition.csl
+address: 314 New East, Chapel Hill, NC 27599-3140
+phone: +1 919 962 4767
+www: nkaza.github.io
+email: nkaza@unc.edu
+github: nkaza
+date: June 02, 2024
+csl: csl/chicago-author-date.csl
 header-includes: \usepackage{xurl}
-knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/JooYoung_Seo_CV",
+knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/nkaza_CV",
   output_format = "all", envir = globalenv(), ...), browseURL)})
 bibliography:
-  d6b059466fc312a74a014e8d2d46e645: C:/Users/jseo1005/AppData/Local/Temp/RtmpMT7OdT/file5e8854436e90.yaml
-  18084f58505ae6ae48984291be07c5a5: C:/Users/jseo1005/AppData/Local/Temp/RtmpMT7OdT/file5e882c4dea.yaml
-  06a43cf8d0163263410720e1e6ecf8e3: C:/Users/jseo1005/AppData/Local/Temp/RtmpMT7OdT/file5e8872763324.yaml
-  d735fc8e424a60effc95b6b86f680502: C:/Users/jseo1005/AppData/Local/Temp/RtmpMT7OdT/file5e883d921425.yaml
-  37f5ad1f1850196509ec80c98fd22097: C:/Users/jseo1005/AppData/Local/Temp/RtmpMT7OdT/file5e8843075b0.yaml
-  e4f6fe834f2d1b4cdb55cfea3d65ab90: C:/Users/jseo1005/AppData/Local/Temp/RtmpMT7OdT/file5e8823bf1397.yaml
-  2061fa253ba446d2f8d9d3810e4746e6: C:/Users/jseo1005/AppData/Local/Temp/RtmpMT7OdT/file5e882524692c.yaml
+  d7160fc4b1472e33e971f07cf2a6101a: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//Rtmp5qXJm8/fileb59a494d88de.yaml
+  0a0d0fd29f56a34069c75b517e1d0099: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//Rtmp5qXJm8/fileb59a6638857b.yaml
+  a989a3d82cf00293d83f5c3a7efb2b00: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//Rtmp5qXJm8/fileb59a5bb7ad0b.yaml
+  232f4b001e79d047eaeb05f5ea63b847: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//Rtmp5qXJm8/fileb59a5860dc4d.yaml
 nocite: '@seo2019arow, @seo2019maker, @doi:10.1080/09286586.2020.1863993, @seo2022csun,
   @seoScopingReviewThree2022, @seoSCAFFOLDingAllAbilities2021a, @seoTeachingVisualAccessibility2023,
   @moonLearningAnalyticsSeamless2023a, @leePersonalHealthData2023, @moonRevisitingMultimediaLearning2023,
@@ -36,11 +27,8 @@ nocite: '@seo2019arow, @seo2019maker, @doi:10.1080/09286586.2020.1863993, @seo20
   @huh2022duoethnographic, @teachingvisualaccessibility2022, @289508, @289496, @kimTrendCollaborationSTEM2023a,
   @parkExploringOnlineCommunity2023, @seoCodingNonVisuallyVisual2023, @seoMAIDRMultimodalAccess2023,
   @seoMAIDRMakingStatistical2024, @10.2312:eved.20241053, @leeIdentifyAdaptPersist2024,
-  @SeoDogucu2023, @choi2018effects, @choi2019exploring, @choi2019heart, @choi2019trends,
-  @doi:10.1080/01612840.2019.1705944, @doi:10.1111/nuf.12328, @heckelInformationSciencesProfessora,
-  @katsnelsonTheseToolsHelp2023, @mccallen2023data, @R-ezpickr, @R-mboxr, @R-youtubecaption,
-  @Iannone_gt_Easily_Create, @R-edmdown, @R-ezviewr, @R-jladown, @R-tactileR, @webrender,
-  @R-islsdown'
+  @SeoDogucu2023, @heckelInformationSciencesProfessora, @katsnelsonTheseToolsHelp2023,
+  @mccallen2023data'
 
 ---
 
@@ -50,38 +38,41 @@ nocite: '@seo2019arow, @seo2019maker, @doi:10.1080/09286586.2020.1863993, @seo20
 
 # Education
 
-<p>`2021`
-__University Park, PA__ Ph.D. in Learning, Design, and Technology (The Pennsylvania State University)
+<p>`2008`
+__Urbana Champaign__ Ph.D. in Regional Planning (University of Illinois)
 <ul>
-<li> Dissertation Title: ``Discovering Informal Learning Cultures of Blind Individuals Pursuing STEM Disciplines: A Computational Ethnography Using Public Listserv Archives.'' </li>
-<li> Committee members: Drs. Gabriela T. Richard (adviser; dissertation chair), Roy B. Clariana, ChanMin Kim, and Mary Beth Rosson. </li></ul></p><p>`2016`
-__University Park, PA__ M.Ed. in Learning, Design, and Technology (The Pennsylvania State University)
-</p><p>`2014`
-__Seoul, South Korea__ Double B.A. in Education, English Literature (Sungkyunkwan University)
+<li> Dissertation Title: ``Reasoning with Plans: Inference of Semantic Relationships among Plans about Urban Development'' </li></ul></p><p>`2007`
+__Urbana Champaign__ M.S. in Applied Mathematics (University of Illinois)
+</p><p>`2004`
+__Urbana Champaign__ M.U. P. in Urban Planning (University of Illinois)
+</p><p>`2001`
+__Kharagpur, India__ B.Arch (Hons.) in Architecture (Indian Institute of Technology)
 </p>
 
 <!--chapter:end:education.Rmd-->
 
-# Professional Appointment
+# Experience
 
-<p>`Sep. 2021 - Present`
-__University of Illinois at Urbana-Champaign__ Assistant Professor (School of Information Sciences)
-</p><p>`Apr. 2024 - Present`
-__University of Illinois at Urbana-Champaign__ Faculty Affiliate (Department of Computer Science)
-</p><p>`Sep. 2021 - Present`
-__University of Illinois at Urbana-Champaign__ Faculty Affiliate (Illinois Informatics Institute)
-</p><p>`Dec. 2021 - Present`
-__University of Illinois at Urbana-Champaign__ Faculty Affiliate (National Center for Supercomputing Applications)
-</p><p>`Dec. 2023 - Present`
-__University of Illinois at Urbana-Champaign__ Faculty Affiliate (Beckman Institute for Advanced Science and Technology)
-</p><p>`Jan. 2022 - Present`
-__University of Illinois at Urbana-Champaign__ Faculty Affiliate (IDEA (Inclusion, Diversity, Equity, and Access) Institute)
-</p><p>`Jul. 2023 - Present`
-__Smith-Kettlewell Eye Research Institute__ Affiliate Scientist (Rehabilitation Engineering Research Center (RERC) on Blindness and Low Vision)
-</p><p>`Feb. 2024 - Present`
-__University of Washington__ AccessComputing partner (AccessComputing)
-</p><p>`May. 2020 - Aug. 2020`
-__Boston, MA__ Software Engineer Intern (RStudio)
+<p>`Jul 2021 - Present`
+__University of North Carolina at Chapel Hill__ Professor (Department of City \& Regional Planning)
+</p><p>`Jul 2021 -Jul 2024`
+__University of North Carolina at Chapel Hill__ Director (Center for Urban \& Regional Studies)
+</p><p>`Jul 2016 - Jul 2024`
+__University of North Carolina at Chapel Hill__ Adjunct Associate Professor (Environment, Ecology \& Energy Program)
+</p><p>`Jan 2019 - May 2019`
+__Ecole Polytechnique Fédérale de Lausane__ Host Professor (School of Architecture, Civil \& Environmental Engineering)
+</p><p>`Jul 2015  - Jul 2021`
+__University of North Carolina at Chapel Hill__ Associate Professor (Department of City \& Regional Planning)
+</p><p>`Jul 2015  - Jul 2017`
+__University of North Carolina at Chapel Hill__ Associate Chair (Department of City \& Regional Planning)
+</p><p>`Jul 2009  - Jul 2015`
+__University of North Carolina at Chapel Hill__ Assistant Professor (Department of City \& Regional Planning)
+</p><p>`Jan 2012 - Jul 2016`
+__University of North Carolina at Chapel Hill__ Adjunct Assistant Professor (Curriculum of Ecology \& Environment)
+</p><p>`Jan 2008 - Dec 2008`
+__Washington, DC__ Sustainability Systems Modeler (EDAW Inc.)
+</p><p>`Nov 2007 - Jun 2009`
+__University of Maryland at College Park__ Post Doctoral Fellow (National Center for Smart Growth Research \& Education)
 </p>
 
 <!--chapter:end:appointment.Rmd-->
@@ -131,53 +122,25 @@ vroom::vroom("data/grant.csv") %>%
 
 # Publications
 
-* The following notations only apply to September 2021 and after.
-
-`#`: derived from the candidate’s thesis.
-
-`*`: publication that has undergone stringent editorial review by peers.
-
-`+`: publication that was invited and carries special prestige and recognition.
-
-<!-- # Selected Publications -->
-<!--  -->
-<!-- ::: {#refs_selected} -->
-<!-- ::: -->
-
 ## Refereed Journal Papers
 
 
-::: {#refs-d6b059466fc312a74a014e8d2d46e645}
+::: {#refs-d7160fc4b1472e33e971f07cf2a6101a}
 :::
 
 ## Papers in Refereed Conference Proceedings
 
 
-::: {#refs-18084f58505ae6ae48984291be07c5a5}
+::: {#refs-0a0d0fd29f56a34069c75b517e1d0099}
 :::
 
 ## Book Chapters
 
 
-::: {#refs-06a43cf8d0163263410720e1e6ecf8e3}
+::: {#refs-a989a3d82cf00293d83f5c3a7efb2b00}
 :::
 
 <!--chapter:end:publication.Rmd-->
-
-
-## Publications in Healthcare
-
-
-::: {#refs-d735fc8e424a60effc95b6b86f680502}
-:::
-
-<!-- ## Working Papers under Revision or Review -->
-
-<!-- ```{r} -->
-<!-- bibliography_entries("bib/working_paper.bib") -->
-<!-- ``` -->
-
-<!--chapter:end:healthcare.Rmd-->
 
 # Conference Presentations and Invited Talks
 
@@ -262,72 +225,10 @@ vroom::vroom("data/talk.csv") %>%
 # Media Coverage
 
 
-::: {#refs-37f5ad1f1850196509ec80c98fd22097}
+::: {#refs-232f4b001e79d047eaeb05f5ea63b847}
 :::
 
 <!--chapter:end:media_coverage.Rmd-->
-
-# Software Developments and Publications
-
-## Data Science Packages in Comprehensive R Archive Network (CRAN)
-
-<!-- ```{r R-package, echo = FALSE, cache = FALSE, eval = FALSE}
-knitr::write_bib(c("ezpickr", "mboxr", "youtubecaption"), "bib/R_packages.bib")
-# R_package <- suppressMessages(RefManageR::ReadBib("bib/R_packages.bib", check = FALSE))
-# RefManageR:::print.BibEntry(R_package)
-#### vitae::bibliography_entries("bib/R_packages.bib")
-``` -->
-
-
-::: {#refs-e4f6fe834f2d1b4cdb55cfea3d65ab90}
-:::
-
-\newpage
-
-## Open-Source Project on GitHub
-
-<!-- ```{r github, echo = FALSE, cache = FALSE, eval=T}
-# knitr::write_bib(c('tactileR', 'ezviewr', 'jladown', 'edmdown'), "bib/github.bib")
-# github <- suppressMessages(RefManageR::ReadBib("bib/github.bib", check = FALSE))
-# RefManageR:::print.BibEntry(github)
-#### vitae::bibliography_entries("bib/github.bib")
-``` -->
-
-
-::: {#refs-2061fa253ba446d2f8d9d3810e4746e6}
-:::
-
-## Officially Code_Contributing R Packages
-
-* [My GitHub pull requests](https://github.com/pulls?q=is%3Apr+author%3Ajooyoungseo+archived%3Afalse+is%3Aclosed) have been peer-reviewed and merged for active data science R packages:
-
-<p>`2020`
-__https://cran.r-project.org/web/packages/shiny/__ shiny: Web Application Framework for R (Chang, W., Cheng, J., Allaire, J., Xie, Y., \& McPherson, J.)
-<ul>
-<li> Contributed to improving keyboard and TTS accessibility for input widgets. </li></ul></p><p>`2020`
-__https://cran.r-project.org/web/packages/vitae/__ vitae: Curriculum Vitae for R Markdown (O'Hara-Wild, M., \& Hyndman, R.)
-<ul>
-<li> Contributed to enabling LaTeX engine customization. </li>
-<li> Contributed to displaying multiple bibliographies based on lua filter. </li></ul></p><p>`2019`
-__https://cran.r-project.org/web/packages/rmarkdown/__ rmarkdown: Dynamic Documents for R (Allaire, J., Xie, Y., et al.)
-<ul>
-<li> Contributed to improving ioslides\_presentation accessibility for screen reading software. </li></ul></p><p>`2019`
-__https://cran.r-project.org/web/packages/bookdown/__ bookdown: Authoring Books and Technical Documents with R Markdown (Xie, Y.)
-<ul>
-<li> Developed context\_document2, github\_document2, beamer\_presentation2, html\_fragment2, html\_notebook2, html\_vignette2, ioslides\_presentation2, slidy\_presentation2 and rtf\_document2 functions to enable R markdown users to utilize cross-references for figures and tables through bookdown package. </li></ul></p><p>`2019`
-__https://cran.r-project.org/web/packages/distill/__ distill: 'R Markdown' Format for Scientific and Technical Writing (Allaire, J., Iannone, R., \& Xie, Y.)
-<ul>
-<li> Contributed to displaying more metadata for journal article bib\_entries. </li>
-<li> Improved screen reader accessibility for navigation bar. </li>
-<li> Added missing Google Scholar meta tags for conference, technical report, and dissertation types. </li></ul></p><p>`2019`
-__https://git.io/JkJca__ wordcountaddin: Word counts and readability statistics in R markdown documents (Marwick, B.)
-<ul>
-<li> Contributed to text\_stats() function for R markdown users to Get a word count and some other stats for selected text (excluding code chunks and inline code). </li></ul></p><p>`2019`
-__https://cran.r-project.org/web/packages/BrailleR/__ BrailleR: Improved Access for Blind Users (Godfrey, A. J. R., Warren, D., Murrell, P., Bilton, T., \& Sorge, V.)
-<ul>
-<li> Contributed to BRLThis() function to enable blind R users to convert a graph into a pdf ready for embossing in Braille. </li></ul></p>
-
-<!--chapter:end:software_dev.Rmd-->
 
 # Teaching Experience
 <!-- ```{r teaching-experience}

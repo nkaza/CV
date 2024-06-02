@@ -1,18 +1,5 @@
 # Publications
 
-* The following notations only apply to September 2021 and after.
-
-`#`: derived from the candidate’s thesis.
-
-`*`: publication that has undergone stringent editorial review by peers.
-
-`+`: publication that was invited and carries special prestige and recognition.
-
-<!-- # Selected Publications -->
-<!--  -->
-<!-- ::: {#refs_selected} -->
-<!-- ::: -->
-
 ## Refereed Journal Papers
 
 ```{r}
