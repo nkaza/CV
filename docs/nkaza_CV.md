@@ -15,9 +15,9 @@ header-includes: \usepackage{xurl}
 knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/nkaza_CV",
   output_format = "all", envir = globalenv(), ...), browseURL)})
 bibliography:
-  92333bf2587d2e2928ed3fc723ae37ba: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpPAJ8k4/file11a026769591d.yaml
-  562c2f672dbd7502ca65d02a8d811cb9: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpPAJ8k4/file11a02520a6cad.yaml
-  aaaf969735661a92bc15933de5718ba6: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpPAJ8k4/file11a025982e5d7.yaml
+  92333bf2587d2e2928ed3fc723ae37ba: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmprI4UPW/file11da759b28edc.yaml
+  562c2f672dbd7502ca65d02a8d811cb9: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmprI4UPW/file11da763618a09.yaml
+  aaaf969735661a92bc15933de5718ba6: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmprI4UPW/file11da71df2d0cf.yaml
 nocite: '@kazaMulticlassCompactnessIndex2024, @wangSocioeconomicDisparitiesActivitytravel2022,
   @dicarloCustomerComplaintManagement2023a, @Branham:2022te, @Hino:2023uq, @branhamRemovingFederalSubsidies2021,
   @Kaza:2019aa, @Branham:2021CB, @Kaza:2019ab, @Peng:2020aa, @pesantez_berglund_kaza,
