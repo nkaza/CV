@@ -1393,28 +1393,6 @@
       <key macro="title" />
     </sort>
     <layout>
-
-
-<!--  The following lines are commented out by Nikhil Kaza to ignore the article number  
-
-The following lines were added by JooYoung Seo (jseo1005@illinois.edu) to print the
-      article number and annote field in the bibliography. -->
-      <choose>
-        <!-- Check if annote exists -->
-        <if variable="annote">
-          <!-- If annote exists, display citation number followed by annote -->
-          <text variable="citation-number" prefix="" suffix="." />
-          <text variable="annote" vertical-align="sup" font-style="italic" font-weight="bold"
-            prefix="" suffix=" " />
-        </if>
-        <else>
-          <!-- If annote doesn't exist, just display the citation number followed by a period -->
-          <text variable="citation-number" prefix="" suffix=". " />
-        </else>
-      </choose> 
--->
-
-
       <choose>
         <if type="bill legal_case legislation treaty" match="any">
           <!-- Legal items have different orders and delimiters -->
@@ -1442,9 +1420,6 @@ The following lines were added by JooYoung Seo (jseo1005@illinois.edu) to print 
           </group>
         </else>
       </choose>
-      <!-- The following line was added by JooYoung Seo (jseo1005@illinois.edu) to print the note
-      field. -->
-      <text variable="note" font-style="italic" prefix=". " suffix="." />
       <!-- The following line was commented out by JooYoung Seo (jseo1005@illinois.edu) to prevent
       the annote field from being printed at the end in the bibliography. -->
       <!-- <text variable="annote" display="block" /> -->

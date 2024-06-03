@@ -3,14 +3,13 @@ rmd_files:
   - "index.Rmd"
   - "education.Rmd"
   - "appointment.Rmd"
-  - "grant.Rmd"
+#  - "grant.Rmd"
   - "publication.Rmd"
-  - "presentation.Rmd"
-  - "media_coverage.Rmd"
-  - "teaching_exp.Rmd"
-  - "award.Rmd"
-  - "service.Rmd"
-  - "membership.Rmd"
+#  - "presentation.Rmd"
+#  - "teaching_exp.Rmd"
+#  - "award.Rmd"
+#  - "service.Rmd"
+#  - "membership.Rmd"
 
 book_filename: "nkaza_CV"
-delete_merged_file: true
+delete_merged_file: false

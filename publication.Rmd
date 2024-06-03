@@ -1,21 +1,49 @@
 # Publications
 
+```{r}
+pubs <- vitae::bibliography_entries("bib/kaza.bib") 
+```
+
+
+
 ## Refereed Journal Papers
 
 ```{r}
-vitae::bibliography_entries("bib/journal.bib")
-# arrange(desc(row_number())) %>%
-# relocate(annote)
+articles <- pubs%>%
+    filter(type == "article-journal")
 ```
 
-## Papers in Refereed Conference Proceedings
+Total number of articles in referred journals:  **`r nrow(articles)`**
 
 ```{r}
-bibliography_entries("bib/proceedings.bib")
+articles %>%
+    arrange(desc(issued$year))
+```
+
+## Manuscripts
+
+
+```{r}
+manusc <- pubs%>%
+    filter(type == "manuscript")
+```
+
+Manuscripts in progress/submitted/accepted:  **`r nrow(manusc)`**
+
+```{r}
+manusc
 ```
 
 ## Book Chapters
 
 ```{r}
-bibliography_entries("bib/book.bib")
+chaps <- pubs%>%
+    filter(type == "chapter")
 ```
+
+Total number of chapters in collected volumes:   **`r nrow(chaps)`**
+
+```{r}
+chaps %>% arrange(desc(issued$year))
+```
+

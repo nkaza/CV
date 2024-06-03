@@ -11,7 +11,8 @@ www: nkaza.github.io
 email: "nkaza@unc.edu"
 github: nkaza
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
-csl: "csl/chicago-author-date.csl"
+#csl: "csl/chicago-author-date.csl"
+csl: "csl/apa7-cv-nk-edition.csl"
 header-includes:
   # allow URLs to break at any character
   - \usepackage{xurl}
@@ -20,6 +21,7 @@ header-includes:
   # - \fancyhf{}
   # - \fancyhead[R]{\thepage}
 knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/nkaza_CV", output_format = "all", envir = globalenv(), ...), browseURL)})
+
 ---
 
 ```{r setup, include=FALSE, cache = FALSE}

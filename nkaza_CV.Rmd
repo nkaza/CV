@@ -1,0 +1,108 @@
+---
+title: Nikhil Kaza
+graphics: no
+name: Nikhil
+surname: Kaza
+headcolor: 414141
+#qualifications: 
+address: "314 New East, Chapel Hill, NC 27599-3140"
+phone: "+1 919 962 4767"
+www: nkaza.github.io
+email: "nkaza@unc.edu"
+github: nkaza
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+#csl: "csl/chicago-author-date.csl"
+csl: "csl/apa7-cv-nk-edition.csl"
+header-includes:
+  # allow URLs to break at any character
+  - \usepackage{xurl}
+  # - \usepackage{fancyhdr}
+  # - \pagestyle{fancy}
+  # - \fancyhf{}
+  # - \fancyhead[R]{\thepage}
+knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/nkaza_CV", output_format = "all", envir = globalenv(), ...), browseURL)})
+
+---
+
+```{r setup, include=FALSE, cache = FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(vroom)
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Education
+
+```{r education}
+vroom::vroom("data/education.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:education.Rmd-->
+
+# Experience
+
+```{r appointment}
+vroom::vroom("data/appointment.csv") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+```
+
+<!--chapter:end:appointment.Rmd-->
+
+# Publications
+
+```{r}
+pubs <- vitae::bibliography_entries("bib/kaza.bib") 
+```
+
+
+
+## Refereed Journal Papers
+
+```{r}
+articles <- pubs%>%
+    filter(type == "article-journal")
+```
+
+Total number of articles in referred journals:  **`r nrow(articles)`**
+
+```{r}
+articles %>%
+    arrange(desc(issued$year))
+```
+
+## Manuscripts
+
+
+```{r}
+manusc <- pubs%>%
+    filter(type == "manuscript")
+```
+
+Manuscripts in progress/submitted/accepted:  **`r nrow(manusc)`**
+
+```{r}
+manusc
+```
+
+## Book Chapters
+
+```{r}
+chaps <- pubs%>%
+    filter(type == "chapter")
+```
+
+Total number of chapters in collected volumes:   **`r nrow(chaps)`**
+
+```{r}
+chaps %>% arrange(desc(issued$year))
+```
+
+
+<!--chapter:end:publication.Rmd-->
+
