@@ -1,0 +1,33 @@
+# Presentations
+
+```{r}
+pubs <- vitae::bibliography_entries("bib/kaza.bib") 
+
+```
+
+## Invited Talks
+
+```{r, results='asis'}
+vroom::vroom('data/talk.csv') |>
+    arrange(desc(when)) |>
+
+    mutate(entry = paste0( "\\emph{", title, "}" )) |>
+    select(when, location, entry) |>
+    baretable(align = "llp{6cm}l")
+    
+```
+
+
+
+## Conference Presentations (Selected)
+
+```{r}
+presentations <- pubs%>%
+    filter(type == "paper-conference") %>%
+    arrange(desc(issued$year))
+
+presentations
+
+```
+
+

@@ -2,6 +2,38 @@
 
 ```{r}
 pubs <- vitae::bibliography_entries("bib/kaza.bib") 
+
+
+# Google scholar stats
+get_gcites <- function(date) {
+  "https://scholar.google.com/citations?hl=en&user=F0FfN00AAAAJ" |>
+    gcite::gcite_url() |>
+    gcite::gcite_citation_index()
+}
+
+# Get Google scholar citation data
+get_scholar_cites <- function(date) {
+  # Need to load in lots of 100 to avoid connection issues
+  gspapers <- list()
+  complete <- FALSE
+  while (!complete) {
+    k <- length(gspapers)
+    gspapers[[k + 1]] <- gcite::gcite_url(
+        url = "https://scholar.google.com/citations?hl=en&user=F0FfN00AAAAJ",
+        cstart = k * 100,
+        pagesize = 100
+      ) |>
+      gcite::gcite_papers() |>
+      suppressWarnings()
+    if (NROW(gspapers[[k + 1]]) < 100) {
+      complete <- TRUE
+    }
+  }
+  dplyr::bind_rows(gspapers) |>
+    tibble::as_tibble()
+}
+
+
 ```
 
 
@@ -10,13 +42,25 @@ pubs <- vitae::bibliography_entries("bib/kaza.bib")
 
 ```{r}
 articles <- pubs%>%
-    filter(type == "article-journal")
+    filter(type == "article-journal") %>%
+    filter(!(id %in% c('Kaza:2015review', "Kaza:2012review", "Kaza:2009review"))) # Book Reviews
 ```
 
-Total number of articles in referred journals:  **`r nrow(articles)`**
+According to Google Scholar, the  **`r nrow(articles)`** articles (co-)authored by me have been cited **`r get_gcites()[1,"All"] %>% prettyNum(big.mark=",")`** times.
 
 ```{r}
 articles %>%
+    arrange(desc(issued$year))
+```
+
+## Book Reviews
+
+```{r}
+reviews <- pubs%>%
+    filter(type == "article-journal") %>%
+    filter(id %in% c('Kaza:2015review', "Kaza:2012review", "Kaza:2009review")) # Book Reviews
+
+reviews %>%
     arrange(desc(issued$year))
 ```
 

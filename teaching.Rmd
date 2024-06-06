@@ -1,0 +1,55 @@
+# Teaching Activities
+
+## Instructor
+
+```{r courses, results='asis'}
+vroom::vroom("data/teaching.csv") %>%
+    group_by(Title) %>%
+    mutate(count = n()) %>%
+    arrange(desc(count), Year) %>%
+    mutate(term_year = paste(Term, Year, sep = " "),
+            term_enroll = paste0(term_year, "(", Enrollment, ")") 
+           ) %>%
+    summarize(Course_number = first(Course_number), 
+              count = first(count),
+              term_enroll = paste(term_enroll, collapse = " ")) %>%
+    arrange(desc(count)) %>%
+    select(Course_number, Title, term_enroll) %>%
+    baretable(align = "llp{4.5cm}p{9.5cm}")
+    
+    
+```
+
+
+## Dissertation Committee Chair
+
+```{r phdchair, results='asis'}
+vroom::vroom("data/diss_committee.csv") %>%
+    filter(role == "Chair") %>%
+    arrange(desc(grad_year)) %>%
+    select(grad_year, student, title) %>%
+    baretable(align = "llp{3cm}p{12cm}",)
+```
+
+
+## Dissertation Commmittee Member
+
+```{r phdcommittees, results='asis'}
+vroom::vroom("data/diss_committee.csv") %>%
+    filter(role == "Member") %>%
+    arrange(desc(grad_year)) %>%
+    select(grad_year, student, title) %>%
+    baretable(    align = "llp{3cm}p{12cm}")
+```
+
+## Comprehensive Exam Commmittee Member
+
+```{r compcommittees, results = "asis"}
+vroom::vroom("data/comp_committee.csv") %>%
+    arrange(grad_year) %>%
+    mutate(final = if_else(is.na(grad_year), student, paste0(student, "(", grad_year, ")"))) %>%
+    pull(final) %>%
+    paste(collapse = ", ") %>%
+    cat()
+
+```

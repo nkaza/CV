@@ -5,7 +5,7 @@ name: Nikhil
 surname: Kaza
 headcolor: 414141
 #qualifications: 
-address: "314 New East, Chapel Hill, NC 27599-3140"
+address: "110 New East, Chapel Hill, NC 27599-3140"
 phone: "+1 919 962 4767"
 www: nkaza.github.io
 email: "nkaza@unc.edu"
@@ -16,10 +16,14 @@ csl: "csl/apa7-cv-nk-edition.csl"
 header-includes:
   # allow URLs to break at any character
   - \usepackage{xurl}
+  - \usepackage{longtable}
+  - \geometry{left=2.5cm, top=2cm, right=2.5cm, bottom=1cm, footskip=.4cm}
+
   # - \usepackage{fancyhdr}
   # - \pagestyle{fancy}
   # - \fancyhf{}
   # - \fancyhead[R]{\thepage}
+
 knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/nkaza_CV", output_format = "all", envir = globalenv(), ...), browseURL)})
 
 ---
@@ -30,6 +34,8 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 library(tidyverse)
 library(vroom)
+source("R/pretty.R")
+
 ```
 
 <!--chapter:end:index.Rmd-->
@@ -54,10 +60,87 @@ vroom::vroom("data/appointment.csv") %>%
 
 <!--chapter:end:appointment.Rmd-->
 
+
+# Grants
+
+```{r grantstable, results='asis'}
+
+grants <- read_csv('data/grant.csv')
+
+sumgrants <- grants |>
+  pull(total_costs) |>
+  sum(na.rm = TRUE)
+
+
+onlydirectcosts <- FALSE
+
+grants <-
+    if(onlydirectcosts)
+    rename(grants, Amount = direct_costs) else
+        rename(grants, Amount = total_costs)
+
+sumgrants <- grants |>
+  pull(Amount) |>
+  sum(na.rm = TRUE)
+
+
+grants |>
+  mutate(
+    Time = paste0(start, ifelse(is.na(end), "", paste0("--", end))),
+    Entry = paste( "``", title, "''\t",
+      "\\emph{", funding_agency, "}",
+      sep = ""
+    ),
+    Amount = dollars(Amount)
+  ) |>
+  arrange(desc(Time), desc(Amount)) |>
+  select(Time, Entry, Amount) %>%
+  baretable(align = "llp{11.3cm}r",
+            longtable =TRUE)
+
+# Bare table is from Rob Hyndman's CV template. See pretty.R. Eventually need to create one that will work for html/doc
+```
+
+I have acquired (in most cases jointly) $`r sprintf("%2.1f", sumgrants/1e6)` million in  research grants. 
+
+<!--chapter:end:grant.Rmd-->
+
 # Publications
 
 ```{r}
 pubs <- vitae::bibliography_entries("bib/kaza.bib") 
+
+
+# Google scholar stats
+get_gcites <- function(date) {
+  "https://scholar.google.com/citations?hl=en&user=F0FfN00AAAAJ" |>
+    gcite::gcite_url() |>
+    gcite::gcite_citation_index()
+}
+
+# Get Google scholar citation data
+get_scholar_cites <- function(date) {
+  # Need to load in lots of 100 to avoid connection issues
+  gspapers <- list()
+  complete <- FALSE
+  while (!complete) {
+    k <- length(gspapers)
+    gspapers[[k + 1]] <- gcite::gcite_url(
+        url = "https://scholar.google.com/citations?hl=en&user=F0FfN00AAAAJ",
+        cstart = k * 100,
+        pagesize = 100
+      ) |>
+      gcite::gcite_papers() |>
+      suppressWarnings()
+    if (NROW(gspapers[[k + 1]]) < 100) {
+      complete <- TRUE
+    }
+  }
+  dplyr::bind_rows(gspapers) |>
+    tibble::as_tibble()
+}
+
+
 ```
 
 
@@ -66,13 +149,25 @@ pubs <- vitae::bibliography_entries("bib/kaza.bib")
 
 ```{r}
 articles <- pubs%>%
-    filter(type == "article-journal")
+    filter(type == "article-journal") %>%
+    filter(!(id %in% c('Kaza:2015review', "Kaza:2012review", "Kaza:2009review"))) # Book Reviews
 ```
 
-Total number of articles in referred journals:  **`r nrow(articles)`**
+According to Google Scholar, the  **`r nrow(articles)`** articles (co-)authored by me have been cited **`r get_gcites()[1,"All"] %>% prettyNum(big.mark=",")`** times.
 
 ```{r}
 articles %>%
+    arrange(desc(issued$year))
+```
+
+## Book Reviews
+
+```{r}
+reviews <- pubs%>%
+    filter(type == "article-journal") %>%
+    filter(id %in% c('Kaza:2015review', "Kaza:2012review", "Kaza:2009review")) # Book Reviews
+
+reviews %>%
     arrange(desc(issued$year))
 ```
 
@@ -105,4 +200,149 @@ chaps %>% arrange(desc(issued$year))
 
 
 <!--chapter:end:publication.Rmd-->
+
+# Presentations
+
+```{r}
+pubs <- vitae::bibliography_entries("bib/kaza.bib") 
+
+```
+
+## Invited Talks
+
+```{r, results='asis'}
+vroom::vroom('data/talk.csv') |>
+    arrange(desc(when)) |>
+
+    mutate(entry = paste0( "\\emph{", title, "}" )) |>
+    select(when, location, entry) |>
+    baretable(align = "llp{6cm}l")
+    
+```
+
+
+
+## Conference Presentations (Selected)
+
+```{r}
+presentations <- pubs%>%
+    filter(type == "paper-conference") %>%
+    arrange(desc(issued$year))
+
+presentations
+
+```
+
+
+
+<!--chapter:end:presentations.Rmd-->
+
+# Teaching Activities
+
+## Instructor
+
+```{r courses, results='asis'}
+vroom::vroom("data/teaching.csv") %>%
+    group_by(Title) %>%
+    mutate(count = n()) %>%
+    arrange(desc(count), Year) %>%
+    mutate(term_year = paste(Term, Year, sep = " "),
+            term_enroll = paste0(term_year, "(", Enrollment, ")") 
+           ) %>%
+    summarize(Course_number = first(Course_number), 
+              count = first(count),
+              term_enroll = paste(term_enroll, collapse = " ")) %>%
+    arrange(desc(count)) %>%
+    select(Course_number, Title, term_enroll) %>%
+    baretable(align = "llp{4.5cm}p{9.5cm}")
+    
+    
+```
+
+
+## Dissertation Committee Chair
+
+```{r phdchair, results='asis'}
+vroom::vroom("data/diss_committee.csv") %>%
+    filter(role == "Chair") %>%
+    arrange(desc(grad_year)) %>%
+    select(grad_year, student, title) %>%
+    baretable(align = "llp{3cm}p{12cm}",)
+```
+
+
+## Dissertation Commmittee Member
+
+```{r phdcommittees, results='asis'}
+vroom::vroom("data/diss_committee.csv") %>%
+    filter(role == "Member") %>%
+    arrange(desc(grad_year)) %>%
+    select(grad_year, student, title) %>%
+    baretable(    align = "llp{3cm}p{12cm}")
+```
+
+## Comprehensive Exam Commmittee Member
+
+```{r compcommittees, results = "asis"}
+vroom::vroom("data/comp_committee.csv") %>%
+    arrange(grad_year) %>%
+    mutate(final = if_else(is.na(grad_year), student, paste0(student, "(", grad_year, ")"))) %>%
+    pull(final) %>%
+    paste(collapse = ", ") %>%
+    cat()
+
+```
+
+<!--chapter:end:teaching.Rmd-->
+
+# Service
+
+
+## Other Professional Activities
+```{r otheractivities, results='asis'}
+
+activities <- read_csv('data/service.csv') |>
+           mutate(end = if_else(end == "till-date", year(today()) |> as.character(), end))
+
+activities |>
+    filter(University != "U") |>
+    arrange(desc(end)) |>
+  mutate(
+    Time = paste0(start, ifelse(is.na(end), "", paste0("--", end))),
+    Entry = what,
+  ) |>
+  arrange(desc(Time)) |>
+  select(Time, Entry) |>
+  baretable(align = "llp{11.3cm}")
+
+
+```
+
+Reviewer for
+
+```{r reviews, results='asis'}
+reviewer <- read_csv('data/review_requests.csv') |>
+    pull(journal_title) |>
+    unique()
+
+paste0("\\emph{", reviewer, "}", collapse = ", ") %>% cat()
+```
+
+## University Service
+
+```{r uniservice, results='asis'}
+activities |>
+    filter(University == "U") |>
+    arrange(desc(end)) |>
+  mutate(
+    Time = paste0(start, ifelse(is.na(end), "", paste0("--", end))),
+    Entry = what,
+  ) |>
+  arrange(desc(Time)) |>
+  select(Time, Entry) |>
+  baretable(align = "llp{11.3cm}")
+
+```
+
+<!--chapter:end:service.Rmd-->
 

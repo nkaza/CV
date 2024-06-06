@@ -1,7 +1,48 @@
 # Service
 
-```{r service}
-vroom::vroom("data/service.csv") %>%
-  tidyr::fill(-why) %>%
-  vitae::detailed_entries(what, when, with, where, why)
+
+## Other Professional Activities
+```{r otheractivities, results='asis'}
+
+activities <- read_csv('data/service.csv') |>
+           mutate(end = if_else(end == "till-date", year(today()) |> as.character(), end))
+
+activities |>
+    filter(University != "U") |>
+    arrange(desc(end)) |>
+  mutate(
+    Time = paste0(start, ifelse(is.na(end), "", paste0("--", end))),
+    Entry = what,
+  ) |>
+  arrange(desc(Time)) |>
+  select(Time, Entry) |>
+  baretable(align = "llp{11.3cm}")
+
+
+```
+
+Reviewer for
+
+```{r reviews, results='asis'}
+reviewer <- read_csv('data/review_requests.csv') |>
+    pull(journal_title) |>
+    unique()
+
+paste0("\\emph{", reviewer, "}", collapse = ", ") %>% cat()
+```
+
+## University Service
+
+```{r uniservice, results='asis'}
+activities |>
+    filter(University == "U") |>
+    arrange(desc(end)) |>
+  mutate(
+    Time = paste0(start, ifelse(is.na(end), "", paste0("--", end))),
+    Entry = what,
+  ) |>
+  arrange(desc(Time)) |>
+  select(Time, Entry) |>
+  baretable(align = "llp{11.3cm}")
+
 ```

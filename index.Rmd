@@ -5,7 +5,7 @@ name: Nikhil
 surname: Kaza
 headcolor: 414141
 #qualifications: 
-address: "314 New East, Chapel Hill, NC 27599-3140"
+address: "110 New East, Chapel Hill, NC 27599-3140"
 phone: "+1 919 962 4767"
 www: nkaza.github.io
 email: "nkaza@unc.edu"
@@ -16,10 +16,14 @@ csl: "csl/apa7-cv-nk-edition.csl"
 header-includes:
   # allow URLs to break at any character
   - \usepackage{xurl}
+  - \usepackage{longtable}
+  - \geometry{left=2.5cm, top=2cm, right=2.5cm, bottom=1cm, footskip=.4cm}
+
   # - \usepackage{fancyhdr}
   # - \pagestyle{fancy}
   # - \fancyhf{}
   # - \fancyhead[R]{\thepage}
+
 knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/nkaza_CV", output_format = "all", envir = globalenv(), ...), browseURL)})
 
 ---
@@ -30,4 +34,6 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 library(tidyverse)
 library(vroom)
+source("R/pretty.R")
+
 ```

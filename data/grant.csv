@@ -1,18 +1,21 @@
-﻿what,when,with,where,why
-Sloan Foundation,Aug. 2022 - Aug. 2023,,,Whole Tale Accessibility Project
-,,,,
-Corporate Partner R&D Funding,Unrestircted,RStudio PBC,"Boston, MA",Improving Accessible Reproducibility for Data Science Publishing System
-Wallace Foundation grant,Jan. 2022 - Dec. 2022,Emerging Scholars Program,International Society of the Learning Sciences,Data Accessibilization: Making Data Science Education Accessible for Blind Learners
-,,,,"Awarded funding amount: $10,000.00."
-Dissertation Research Initiation Grant,Feb. 2020 - Dec. 2020,"College of Education, The Pennsylvania State University","University Park, PA",Selected as one of the 10 outstanding dissertation research proposals in 2019-2020 academic year.
-,,,,Funding amount: $600 USD.
-Doctoral Research,2016 - 2018,ChungInwook Scholarship Foundation,"Seoul, South Korea","Funding amount: $30,000 USD."
-Innovative Research Funding,Mar. 2016 - Aug. 2017,"Center for Online Innovation in Learning, The Pennsylvania State University","University Park, PA",Providing Touchable Knowledge Structure Graphic Feedback for Blind Online Learners: Tablet-Based Haptic Feedback and Paper-Based Tactile Feedback
-,,,,Developed a prototype website and mobile app for accessible knowledge structure.
-,,,,Co-led (Co-PI) a development project funded by Penn State to provide blind online learners with accessible network graphs that measure students’ knowledge structure.
-,,,,"Funding amount: $33,060 USD."
-Future Interdisciplinary Study,2014 - 2016,"National Institute for International Education, Korean Government","Seoul, South Korea",Fully sponsored by Korean Government for the Master's research.
-,,,,"Funding amount: $70,000 USD."
-ICE Soft: I See through Assistive Technology,Jul. 2010 - Jun. 2011,"Seed Funding for Start-Up Company for the Youth, City of Seoul","Seoul, South Korea",Co-Founded and Project-Managed ICE Soft.
-,,,,Worked with a team and developed an gps app for the blind.
-,,,,"Funding amount: $30,000 USD."
+start,end,title,funding_agency,direct_costs,total_costs,perc_effort,role,PI,Other_team
+2023,2024,Finding Unconventional Housing in Risky Places,School of Data Science and Society,49991,49991,10,PI,,
+2023,2024,Multi-Scale Imitation and Robust Recognition of Obfuscated Routes,Intelligence Advanced Research Projects Agency,79328,116399,10,Investigator,Brian Clipp,
+2020,2021,Transportation Electrification ,University Transportation Center,93159,130151,10,co-PI,Noreen McDonald,
+2020,2020,Monitoring Economic Recovery in North Carolina ,North Carolina Policy Collaboratory,287028,287028,17,co-PI,Noreen McDonald,Nichola Lowe
+2019,2020,Evaluating the Buyouts in North Carolina,North Carolina Policy Collaboratory,424878,424878,3.1,co-PI,Todd BenDor,"Dave Salvesen, Miyuki Hino"
+2018,2019,Creating an Interdisciplinary Network to Investigate Drivers of Biodiversity,University of North Carolina Inter Institutional Planning Grant,22000,22000,0,PI,,"Sara Gagne, Rachel Urbanek, Christopher Dumas"
+2017,2018,Smart Management of Water Resources and Infrastructure with the Internet of Things,University of North Carolina Inter Institutional Planning Grant,75000,75000,10,co-PI,Emily Berglund,"Kumar Mahinthakumar, James Bowen, Mohammend Anwar"
+2017,2019,Relationships Between Removal of Infrastructure Subsdies and Coastal Development,National Science Foundation,240349,348507,30,co-PI,Todd BenDor,Dave Salvesen
+2016,2017,Property Rights and Land Tenure in Slums in Bangalore,Omidiyar Network,70476,81047,10,co-PI,Anirudh Krishna,"Erik Wibbels, Ranga Raju Vastavai"
+2014,2015,"Research on Urban Form: A typology of carbon emissions by neighborhood type in Ningbo, China ",World Bank,120689,187671,10,co-PI,Yan Song,
+2014,2017,Quantifying risks from changing U.S. PM2.5 distributions due to climate variability and warming with large multi-model ensembles and high-resolution downscaling ,US Environmental Protection Agency STAR grant ,540154,839939,1,Investigator,Arlene Fiore,Jason West
+2013,2013,Junior Faculty Development Grant,University of North Carolina ,7500,7500,100,PI,,
+2012,2014,The Mortgage Performance of Energy Efficient Homes,Institute for Market Transformation,42000,46200,29,co-PI,Roberto Quercia,
+2012,2013,Incubator Study on Industrial Land Use,What Works Collaborative,"65,173",75000,10,co-PI,T. William Lester,"Daniel Rodriguez, Yan Song, Phil Berke"
+2011,2012,Accessibility in a Gendered Economy,Carolina Transportation Program,5000,5000,5.4,PI,,
+2011,2013,oint Region Marianas Energy Investment Program Development Extension ,"NAVFAC Marianas, US Navy",121199,179375,16,PI,,
+2010,2012,oint Region Marianas Energy Investment Program Development Extension ,"NAVFAC Marianas, US Navy",117170,173412,28,PI,,
+2010,2011,Decision Support Systems for Eastern North Carolina,Southeast Regional Partnership for Planning and Sustainability,42548,62971,3.7,co-I,Phil Berke,"Todd BenDor, Yan Song, David Salvesen"
+2008,2011,Towards a Transportation Modeling  System for Maryland,University Transportation Center,224528,332301,29,Co-I,Gerrit Knaap,
+2010,2011,"Linking Econometric Modesl and Chesapeake Bay Models, Updating Nutrient Load Models, and Coordinating Support of Maryland State Development Plans",Environmental Protection Agency,111486,164999,6,co-I,Gerrit Knaap,"Charles Towe, Glenn Moglen"
