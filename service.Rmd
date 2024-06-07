@@ -25,8 +25,11 @@ Reviewer for
 
 ```{r reviews, results='asis'}
 reviewer <- read_csv('data/review_requests.csv') |>
-    pull(journal_title) |>
-    unique()
+    select(journal_title) |>
+    arrange(journal_title) |>
+    unique() |>
+    pull(journal_title)
+
 
 paste0("\\emph{", reviewer, "}", collapse = ", ") %>% cat()
 ```

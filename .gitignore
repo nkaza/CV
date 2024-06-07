@@ -312,3 +312,5 @@ recent_pub.bib
 output.bib
 
 .Rproj.user
+.Rhistory
+.DS_Store

@@ -9,20 +9,20 @@ phone: +1 919 962 4767
 www: nkaza.github.io
 email: nkaza@unc.edu
 github: nkaza
-date: June 06, 2024
+date: June 07, 2024
 csl: csl/apa7-cv-nk-edition.csl
 header-includes:
 - \usepackage{xurl}
 - \usepackage{longtable}
-- \geometry{left=2.5cm, top=2cm, right=2.5cm, bottom=1cm, footskip=.4cm}
+- \geometry{left=2.5cm, top=2cm, right=2.5cm, bottom=2.5cm, footskip=.4cm}
 knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/nkaza_CV",
   output_format = "all", envir = globalenv(), ...), browseURL)})
 bibliography:
-  7ca7bb3515092132dab0d274f5eaaf31: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//Rtmpp9zqxa/file8c865532cb88.yaml
-  9d813b9b50b9a7c1479407785f88ee9c: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//Rtmpp9zqxa/file8c8665d35ca0.yaml
-  c4ebb341725ba32e88f32ab13c3d0d27: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//Rtmpp9zqxa/file8c8655b5a6c7.yaml
-  0aaabffd17298ffb35a7cdf35de3a454: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//Rtmpp9zqxa/file8c864c0c4d36.yaml
-  ef0e8a783b89fcb690bead49a24d2354: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//Rtmpp9zqxa/file8c86314ae22d.yaml
+  57da465f4c744e1dfdf99c9eabaae7cc: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed5561714057a.yaml
+  149dd9cfeca4d055441185fa490d5dbc: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed5567a1beca2.yaml
+  d651ca7bcf88858e75a3b62f6edc6bc1: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed5568ba979d.yaml
+  0041559440f226477f52e479a476acd4: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed556bdb7859.yaml
+  fb15afc63fa9eb1374774a7e00e9a355: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed5561bd4ef25.yaml
 nocite: '@kazaMulticlassCompactnessIndex2024, @wangSocioeconomicDisparitiesActivitytravel2022,
   @dicarloCustomerComplaintManagement2023a, @Branham:2022te, @Hino:2023uq, @branhamRemovingFederalSubsidies2021,
   @Kaza:2019aa, @Branham:2021CB, @Kaza:2019ab, @Peng:2020aa, @pesantez_berglund_kaza,
@@ -32,14 +32,15 @@ nocite: '@kazaMulticlassCompactnessIndex2024, @wangSocioeconomicDisparitiesActiv
   @Kaza:2011qf, @Kaza:2012zr, @BenDor:2028vn, @Kaza:2013kx, @Kaza:2013fk, @hopkins_representing_2005,
   @Kaza:2006oq, @Kaza:2009fk, @Kaza:2010lr, @Chakraborty:2011lr, @kaza_changing_2013,
   @Kaza:2013uq, @Kaza:TDA, @Kaza:EDQ, @Kaza:2009review, @Kaza:2015review, @Kaza:2012review,
-  @DonaldDashboardNotDead, @KhanalEnergytransition, @BranhamConservation, @LesterKazaMcAdam:2018,
-  @kazaetal2018whoseplan, @Becker:2020, @hopkins_data_2005, @kaza_ontology_2007, @kaza_knaap_2011,
-  @Khanal:2022aa, @Khanal:2023aa, @Branham2021:aa, @Hino:2021aa, @Hino:2021ab, @Kaza:2014aa,
-  @Li:2016aa, @Kaza:2018aa, @He:2019ab, @Onda:2019ab, @Peng:2019aa, @Kaza:2019ac,
-  @Gadiraju:2018aa, @Zapata:ay, @Kaza:tepeval, @BenDor:dw, @Kaza:hq, @Knaap:pt, @Blohm:xq,
-  @Kaza:kn, @Kaza:xw, @Knaap:ee, @Kaza:os, @Kaza:qq, @Kaza:qf, @Kaza:kb, @Kaza:ec,
-  @Kaza:fe, @Kaza:mi, @Kaza:rw, @Brookshire:dk, @hopkins_planning_2003-1, @hopkins_shared_2003-1,
-  @kaza_deliberations_2005, @calderon_gamesevolving_2006, @donaghy_value_2006, @kaza_updating_2007'
+  @Khanal:aa, @Cardwell:aa, @DonaldDashboardNotDead, @KhanalEnergytransition, @BranhamConservation,
+  @LesterKazaMcAdam:2018, @kazaetal2018whoseplan, @Becker:2020, @hopkins_data_2005,
+  @kaza_ontology_2007, @kaza_knaap_2011, @Khanal:2022aa, @Khanal:2023aa, @Branham2021:aa,
+  @Hino:2021aa, @Hino:2021ab, @Kaza:2014aa, @Li:2016aa, @Kaza:2018aa, @He:2019ab,
+  @Onda:2019ab, @Peng:2019aa, @Kaza:2019ac, @Gadiraju:2018aa, @Zapata:ay, @Kaza:tepeval,
+  @BenDor:dw, @Kaza:hq, @Knaap:pt, @Blohm:xq, @Kaza:kn, @Kaza:xw, @Knaap:ee, @Kaza:os,
+  @Kaza:qq, @Kaza:qf, @Kaza:kb, @Kaza:ec, @Kaza:fe, @Kaza:mi, @Kaza:rw, @Brookshire:dk,
+  @hopkins_planning_2003-1, @hopkins_shared_2003-1, @kaza_deliberations_2005, @calderon_gamesevolving_2006,
+  @donaghy_value_2006, @kaza_updating_2007'
 
 ---
 
@@ -87,6 +88,24 @@ __University of Maryland at College Park__ Post Doctoral Fellow (National Center
 
 <!--chapter:end:appointment.Rmd-->
 
+# Awards and Honors
+
+<p>`2023`
+____ Distinguished Teaching Award for Post-Baccalaureate Instruction (Shortlist) (UNC Chapel Hill)
+</p><p>`2018`
+____ Excellence in Doctoral Education (Department of City and Regional Planning, UNC Chapel Hill)
+</p><p>`2017`
+____ Schwab Academic Excellece Award (Institute for the Arts and Humanities, UNC Chapel Hill)
+</p><p>`2012`
+____ Progress Energy Fellowship (Institute for the Environment, UNC Chapel Hill)
+</p><p>`2008`
+____ Department Excellence Award (Department of Urban and Regional Planning, University of Illinois at Urbana Champaign)
+</p><p>`1993`
+____ National Merit Scholar (Ministry of Human Resources, Government of India)
+</p>
+
+<!--chapter:end:award.Rmd-->
+
 
 # Grants
 
@@ -131,13 +150,13 @@ I have acquired (in most cases jointly) $3.6 million in  research grants.
 According to Google Scholar, the  **43** articles (co-)authored by me have been cited **2,067** times.
 
 
-::: {#refs-7ca7bb3515092132dab0d274f5eaaf31}
+::: {#refs-57da465f4c744e1dfdf99c9eabaae7cc}
 :::
 
 ## Book Reviews
 
 
-::: {#refs-9d813b9b50b9a7c1479407785f88ee9c}
+::: {#refs-149dd9cfeca4d055441185fa490d5dbc}
 :::
 
 ## Manuscripts
@@ -145,10 +164,10 @@ According to Google Scholar, the  **43** articles (co-)authored by me have been 
 
 
 
-Manuscripts in progress/submitted/accepted:  **5**
+Manuscripts in progress/submitted/accepted:  **7**
 
 
-::: {#refs-c4ebb341725ba32e88f32ab13c3d0d27}
+::: {#refs-d651ca7bcf88858e75a3b62f6edc6bc1}
 :::
 
 ## Book Chapters
@@ -158,7 +177,7 @@ Manuscripts in progress/submitted/accepted:  **5**
 Total number of chapters in collected volumes:   **4**
 
 
-::: {#refs-0aaabffd17298ffb35a7cdf35de3a454}
+::: {#refs-0041559440f226477f52e479a476acd4}
 :::
 
 
@@ -182,7 +201,7 @@ Total number of chapters in collected volumes:   **4**
 ## Conference Presentations (Selected)
 
 
-::: {#refs-ef0e8a783b89fcb690bead49a24d2354}
+::: {#refs-fb15afc63fa9eb1374774a7e00e9a355}
 :::
 
 
@@ -220,7 +239,7 @@ Total number of chapters in collected volumes:   **4**
   2024 & Amanda Ullman & Measuring the Just Transition: Case Studies and Tools to Evaluate Justice in a Changing Energy System \\ 
   2022 & Alfredo Rojas (Anthropology) & Farming and Cooperation in Northwestern Côte d'Ivorie \\ 
   2022 & Kyle Onda & Essays on Measuring Urbanization and Infrastructure Service Levels \\ 
-  2021 & Mark He & Essays on Community Detetction in Networks \\ 
+  2021 & Mark He (Statistics and Operations Research) & Essays on Community Detetction in Networks \\ 
   2020 & Ahmed Rachid El-Khattabi & Managing the Demand for Scarce Water Resources: An Evaluation of Current Approaches \\ 
   2019 & Yan Chen & Analysing the Determinants of Urban Vibrancy: A Big Data Approach to Connecting the Built Environment, Social Activity, and Images of Place \\ 
   2018 & Chaosu Li & Essays on Climate Change Mitigation, Building Energy Efficiency and Urban Form \\ 
@@ -228,7 +247,7 @@ Total number of chapters in collected volumes:   **4**
   2018 & Allison Forbes & Linked Through Skill: Labor Market Interdependencies across the Automotive Value Chain \\ 
   2017 & Lilah Besser & Neighborhood Built Environment Characteristics and Cognition in Non-demented Older Adults \\ 
   2016 & Marc Howlett & Who Plans? The Role of Metropolitan Planning Organisations in Regional Freight Planning \\ 
-  2012 & Lyndsey Ward & Stakeholder Network Influences on Local-Level Hazard Mitigation Planning Outputs \\ 
+  2012 & Lyndsey Ward Lyles & Stakeholder Network Influences on Local-Level Hazard Mitigation Planning Outputs \\ 
   \end{tabular}
 
 ## Comprehensive Exam Commmittee Member
@@ -252,7 +271,7 @@ Danielle Spurlock(2014), Louis Merlin(2014), Kevin Park(2015), Mac Howlett(2016)
 
 Reviewer for
 
-\emph{European Journal of Decision Processes}, \emph{Applied Energy}, \emph{Journal of American Planning Association}, \emph{Journal of Planning Education and Research}, \emph{American Journal of Public Health}, \emph{Journal of Environmental Planning and Management}, \emph{Future Internet}, \emph{Land Use Policy}, \emph{Urban Studies}, \emph{European Journal of Operations Research}, \emph{Energy Policy}, \emph{Landscape and Urban Planning}, \emph{Environment Systems and Decisions}, \emph{Journal of Transport and Landuse}, \emph{International Journal of Geographic Information Science}, \emph{Transportation Research D}, \emph{Cities}, \emph{Journal of Environmental Management}, \emph{EPJ Data Science}, \emph{Growth and Change}, \emph{Sustainability}, \emph{Energy Sources, Part B: Economics, Planning, and Policy}, \emph{Environmental Science and Technology}, \emph{Environmental Science and Policy}
+\emph{American Journal of Public Health}, \emph{Applied Energy}, \emph{Cities}, \emph{EPJ Data Science}, \emph{Energy Policy}, \emph{Energy Sources, Part B: Economics, Planning, and Policy}, \emph{Environment Systems and Decisions}, \emph{Environmental Science and Policy}, \emph{Environmental Science and Technology}, \emph{European Journal of Decision Processes}, \emph{European Journal of Operations Research}, \emph{Future Internet}, \emph{Growth and Change}, \emph{International Journal of Geographic Information Science}, \emph{Journal of American Planning Association}, \emph{Journal of Environmental Management}, \emph{Journal of Environmental Planning and Management}, \emph{Journal of Planning Education and Research}, \emph{Journal of Transport and Landuse}, \emph{Land Use Policy}, \emph{Landscape and Urban Planning}, \emph{Sustainability}, \emph{Transportation Research D}, \emph{Urban Studies}
 
 ## University Service
 

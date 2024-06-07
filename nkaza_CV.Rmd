@@ -17,7 +17,7 @@ header-includes:
   # allow URLs to break at any character
   - \usepackage{xurl}
   - \usepackage{longtable}
-  - \geometry{left=2.5cm, top=2cm, right=2.5cm, bottom=1cm, footskip=.4cm}
+  - \geometry{left=2.5cm, top=2cm, right=2.5cm, bottom=2.5cm, footskip=.4cm}
 
   # - \usepackage{fancyhdr}
   # - \pagestyle{fancy}
@@ -59,6 +59,15 @@ vroom::vroom("data/appointment.csv") %>%
 ```
 
 <!--chapter:end:appointment.Rmd-->
+
+# Awards and Honors
+
+```{r award}
+vroom::vroom("data/awards.csv") %>%
+  vitae::detailed_entries(what, when, where)
+```
+
+<!--chapter:end:award.Rmd-->
 
 
 # Grants
@@ -322,8 +331,11 @@ Reviewer for
 
 ```{r reviews, results='asis'}
 reviewer <- read_csv('data/review_requests.csv') |>
-    pull(journal_title) |>
-    unique()
+    select(journal_title) |>
+    arrange(journal_title) |>
+    unique() |>
+    pull(journal_title)
+
 
 paste0("\\emph{", reviewer, "}", collapse = ", ") %>% cat()
 ```

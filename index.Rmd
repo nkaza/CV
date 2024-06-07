@@ -17,7 +17,7 @@ header-includes:
   # allow URLs to break at any character
   - \usepackage{xurl}
   - \usepackage{longtable}
-  - \geometry{left=2.5cm, top=2cm, right=2.5cm, bottom=1cm, footskip=.4cm}
+  - \geometry{left=2.5cm, top=2cm, right=2.5cm, bottom=2.5cm, footskip=.4cm}
 
   # - \usepackage{fancyhdr}
   # - \pagestyle{fancy}
