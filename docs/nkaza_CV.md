@@ -9,7 +9,7 @@ phone: +1 919 962 4767
 www: nkaza.github.io
 email: nkaza@unc.edu
 github: nkaza
-date: June 07, 2024
+date: July 12, 2024
 csl: csl/apa7-cv-nk-edition.csl
 header-includes:
 - \usepackage{xurl}
@@ -18,11 +18,11 @@ header-includes:
 knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/nkaza_CV",
   output_format = "all", envir = globalenv(), ...), browseURL)})
 bibliography:
-  57da465f4c744e1dfdf99c9eabaae7cc: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed5561714057a.yaml
-  149dd9cfeca4d055441185fa490d5dbc: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed5567a1beca2.yaml
-  d651ca7bcf88858e75a3b62f6edc6bc1: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed5568ba979d.yaml
-  0041559440f226477f52e479a476acd4: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed556bdb7859.yaml
-  fb15afc63fa9eb1374774a7e00e9a355: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpjuNPe8/filed5561bd4ef25.yaml
+  57da465f4c744e1dfdf99c9eabaae7cc: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpxZ8Aj0/filea0e84a47d2a0.yaml
+  149dd9cfeca4d055441185fa490d5dbc: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpxZ8Aj0/filea0e84edad53c.yaml
+  d651ca7bcf88858e75a3b62f6edc6bc1: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpxZ8Aj0/filea0e883c5722.yaml
+  0041559440f226477f52e479a476acd4: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpxZ8Aj0/filea0e81537c68f.yaml
+  fb15afc63fa9eb1374774a7e00e9a355: /var/folders/pg/hfg8qpf94p78gvys8h6mjlxr0000gn/T//RtmpxZ8Aj0/filea0e82defecdf.yaml
 nocite: '@kazaMulticlassCompactnessIndex2024, @wangSocioeconomicDisparitiesActivitytravel2022,
   @dicarloCustomerComplaintManagement2023a, @Branham:2022te, @Hino:2023uq, @branhamRemovingFederalSubsidies2021,
   @Kaza:2019aa, @Branham:2021CB, @Kaza:2019ab, @Peng:2020aa, @pesantez_berglund_kaza,
@@ -147,7 +147,7 @@ I have acquired (in most cases jointly) $3.6 million in  research grants.
 
 
 
-According to Google Scholar, the  **43** articles (co-)authored by me have been cited **2,067** times.
+According to Google Scholar, the  **43** articles (co-)authored by me have been cited **2,091** times.
 
 
 ::: {#refs-57da465f4c744e1dfdf99c9eabaae7cc}

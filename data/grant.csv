@@ -1,4 +1,5 @@
 start,end,title,funding_agency,direct_costs,total_costs,perc_effort,role,PI,Other_team
+2025,2026,Drinking Water Provision in Manufactured Home Parks,North Carolina Policy Collaboratory,100271,100271,12,PI,,
 2023,2024,Finding Unconventional Housing in Risky Places,School of Data Science and Society,49991,49991,10,PI,,
 2023,2024,Multi-Scale Imitation and Robust Recognition of Obfuscated Routes,Intelligence Advanced Research Projects Agency,79328,116399,10,Investigator,Brian Clipp,
 2020,2021,Transportation Electrification ,University Transportation Center,93159,130151,10,co-PI,Noreen McDonald,
@@ -14,8 +15,8 @@ start,end,title,funding_agency,direct_costs,total_costs,perc_effort,role,PI,Othe
 2012,2014,The Mortgage Performance of Energy Efficient Homes,Institute for Market Transformation,42000,46200,29,co-PI,Roberto Quercia,
 2012,2013,Incubator Study on Industrial Land Use,What Works Collaborative,"65,173",75000,10,co-PI,T. William Lester,"Daniel Rodriguez, Yan Song, Phil Berke"
 2011,2012,Accessibility in a Gendered Economy,Carolina Transportation Program,5000,5000,5.4,PI,,
-2011,2013,oint Region Marianas Energy Investment Program Development Extension ,"NAVFAC Marianas, US Navy",121199,179375,16,PI,,
-2010,2012,oint Region Marianas Energy Investment Program Development Extension ,"NAVFAC Marianas, US Navy",117170,173412,28,PI,,
+2011,2013,Joint Region Marianas Energy Investment Program Development Extension ,"NAVFAC Marianas, US Navy",121199,179375,16,PI,,
+2010,2012,Joint Region Marianas Energy Investment Program Development  ,"NAVFAC Marianas, US Navy",117170,173412,28,PI,,
 2010,2011,Decision Support Systems for Eastern North Carolina,Southeast Regional Partnership for Planning and Sustainability,42548,62971,3.7,co-I,Phil Berke,"Todd BenDor, Yan Song, David Salvesen"
 2008,2011,Towards a Transportation Modeling  System for Maryland,University Transportation Center,224528,332301,29,Co-I,Gerrit Knaap,
 2010,2011,"Linking Econometric Modesl and Chesapeake Bay Models, Updating Nutrient Load Models, and Coordinating Support of Maryland State Development Plans",Environmental Protection Agency,111486,164999,6,co-I,Gerrit Knaap,"Charles Towe, Glenn Moglen"
